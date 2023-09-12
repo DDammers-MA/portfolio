@@ -1,0 +1,46 @@
+.main {
+    flex-grow: 1;
+
+    &__article {
+         flex-grow: 2; /* Add this */
+  display: flex; /* Add this */
+  align-items: center; /* Add this */
+  justify-content: center; /* Add this */
+  min-height: 100vh; /* Add this */
+    }
+
+    &__img {
+        height: 35rem;
+        border-radius: 1rem;
+        box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.8);
+        object-fit: contain;
+
+    }
+
+    &__text {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        margin-left: 5%;
+    }
+
+    &__title {
+        width: 50%;
+        padding: 4rem;
+        font-size: 300%;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+
+
+    }
+}
+
+.bodyProject {
+    height: 90vh;
+
+}

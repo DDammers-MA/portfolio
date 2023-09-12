@@ -1,0 +1,138 @@
+*, ::backdrop, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 2rem;
+  font-family: sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.header {
+  height: 10vh;
+}
+.header__nav {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__ul {
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style: none;
+  gap: 10rem;
+}
+.header__li {
+  color: black;
+  font-size: 120%;
+}
+.header__li:first-child {
+  margin-right: auto;
+}
+.header__link {
+  text-decoration: none;
+  color: black;
+}
+
+.main {
+  flex-grow: 1;
+}
+.main__article {
+  flex-grow: 2; /* Add this */
+  display: flex; /* Add this */
+  align-items: center; /* Add this */
+  justify-content: center; /* Add this */
+  min-height: 100vh; /* Add this */
+}
+.main__img {
+  height: 35rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.8);
+  object-fit: contain;
+}
+.main__text {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 5%;
+}
+.main__title {
+  width: 50%;
+  padding: 4rem;
+  font-size: 300%;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.bodyProject {
+  height: 90vh;
+}
+
+.Projecten {
+  margin-bottom: 2rem; /* Add margin to create space between Projecten and the footer */
+  height: auto;
+}
+.Projecten__title {
+  padding: 2rem;
+  font-size: 150%;
+}
+.Projecten__ul {
+  gap: 3rem;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 2rem;
+}
+.Projecten__li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25rem;
+  width: 25rem;
+  box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.8);
+  border-radius: 0.5rem;
+  transition: all 0.2s;
+}
+.Projecten__li:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.Projecten__img {
+  height: 20rem;
+}
+
+.footer {
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333; /* Choose a background color for your footer */
+  color: white; /* Choose a text color for your footer */
+  font-size: 1.6rem;
+}
+
+/*# sourceMappingURL=style.css.map */

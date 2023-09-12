@@ -1,0 +1,44 @@
+.Projecten {
+ 
+  margin-bottom: 2rem; /* Add margin to create space between Projecten and the footer */
+  height: auto; 
+
+  &__title {
+    padding: 2rem;
+    font-size: 150%;
+
+
+  }
+
+  &__ul {
+    gap: 3rem;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    padding: 2rem;
+   
+  }
+
+  &__li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25rem;
+    width: 25rem;
+box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0,0.8);
+border-radius: 0.5rem;
+transition: all 0.2s;
+
+&:hover{
+  cursor: pointer;
+  transform: scale(1.1);
+}
+  }
+
+  &__img {
+    height: 20rem;
+  }
+
+}

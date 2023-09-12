@@ -1,0 +1,43 @@
+.header {
+    height: 10vh;
+    &__nav {
+        height: 100%;
+        width: 100%;
+      
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    &__ul {
+        padding: 2rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        list-style: none;
+        gap: 10rem;
+    }
+
+    &__li {
+        color: black;
+        font-size: 120%;
+
+    }
+
+    &__li:first-child {
+        margin-right: auto;
+    }
+
+    &__link {
+
+        text-decoration: none;
+        color: black;
+
+
+    }
+
+
+}
