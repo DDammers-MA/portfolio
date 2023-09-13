@@ -1,10 +1,15 @@
 .Projecten {
- 
+min-height: 100vh;
   margin-bottom: 2rem; /* Add margin to create space between Projecten and the footer */
   height: auto; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
   &__title {
     padding: 2rem;
+    padding-top:4rem ;
     font-size: 150%;
 
 
@@ -25,6 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     height: 25rem;
     width: 25rem;
 box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0,0.8);
