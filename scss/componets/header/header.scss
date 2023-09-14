@@ -17,27 +17,38 @@
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: center;
+
         list-style: none;
         gap: 10rem;
+
+        &:hover{
+            color: black;
+        }
+      
     }
 
     &__li {
-        color: black;
+     
         font-size: 120%;
 
     }
 
-    &__li:first-child {
-        margin-right: auto;
-    }
-
+  
     &__link {
 
         text-decoration: none;
-        color: black;
+        color: #333;
 
+        &--contact{
+            background: #333;
+            color: white;
+            border-radius: 0.5rem;
+            padding: 1rem;
 
+        }
+
+    
     }
 
 

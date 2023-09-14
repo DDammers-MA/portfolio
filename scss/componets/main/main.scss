@@ -4,11 +4,11 @@
     overflow: auto;
 
     &__article {
-         flex-grow: 2; /* Add this */
-  display: flex; /* Add this */
-  align-items: center; /* Add this */
-  justify-content: center; /* Add this */
-  min-height: 100vh; /* Add this */
+         flex-grow: 2; 
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  min-height: 100vh;
   
     }
 
@@ -17,7 +17,7 @@
         border-radius: 1rem;
         box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.8);
         object-fit: contain;
-        border: 0.1rem solid black;
+       
         border-radius: 50%;
 
     }
@@ -31,7 +31,7 @@
     }
 
 &__socials {
-    color: black;
+    color: #333;
     list-style: none;
     display: flex;
     align-items: center;

@@ -20,13 +20,14 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </head>
 
 <body>
-    <header class="header">
+<header class="header">
         <nav class="header__nav">
             <ul class="header__ul">
                 <li class="header__li header__li--home"><a class="header__link" href="./index.html">Home</a></li>
-                <li class="header__li"><a class="header__link" href="">Projecten</a></li>
-                <li class="header__li"><a class="header__link" href="">cv</a></li>
-                <li class="header__li"><a class="header__link" href="">contact</a></li>
+                <li class="header__li"><a class="header__link" href="./projecten.php">Projecten</a></li>
+                <li class="header__li"><a class="header__link" href="">About me</a></li>
+                <li class="header__li header__li"><a class="header__link header__link--contact" href="">contact</a></li>
+
             </ul>
         </nav>
     </header>
