@@ -1,0 +1,89 @@
+.ProjectMain{
+min-height: 90vh;
+display: grid;
+grid-template-columns: 50% 50%;
+align-items: center;
+justify-content: center;
+
+
+&__artcLeft{
+
+height: 100%;
+}
+
+&__title{
+font-size: 5rem;
+width: 200%;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 2rem;
+}
+
+    &__details{
+    height: 70%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+     
+
+        
+    }
+
+    &__img{
+       height: 40rem;
+       aspect-ratio: 1/1;
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       object-fit: contain;
+       border-radius: 1rem;
+       box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0,0.8);
+    }
+
+    &__artcRight{
+
+height: 50%;
+display: flex;
+align-items: flex-start;
+justify-content: center;
+flex-direction: column;
+    }
+
+    &__omschrijving{
+       
+        margin-bottom: 1rem;
+    }
+
+    &__text{
+        width: 50ch;
+    }
+
+    &__Buttons {
+        display: flex;
+
+        align-items: center; 
+        justify-content: center;
+        gap: 4rem;
+        margin-top: auto; 
+        
+    
+    }
+    
+    &__Button{
+   
+        
+        height: 4rem;
+        width: 8rem;
+        background: white;
+        color:black ;
+        border: 0.2rem solid black;
+        border-radius: 0.5rem;
+
+        &:hover{
+            transition: 0.2s all;
+            background: black;
+            color: white;
+        }
+    }
+}

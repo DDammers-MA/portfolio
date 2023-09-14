@@ -43,6 +43,15 @@ transition: all 0.2s;
 }
   }
 
+  &__Link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    flex-direction: column;
+    color: black;
+  }
+
   &__img {
     height: 20rem;
   }

@@ -38,7 +38,7 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <ul class="Projecten__ul">
     <?php foreach ($projects as $project): ?>
         <li class="Projecten__li">
-            <a href="project.php?id=<?php echo $project['id']; ?>"> <!-- Add a link to the project detail page -->
+            <a class="Projecten__Link" href="project.php?id=<?php echo $project['id']; ?>"> <!-- Add a link to the project detail page -->
                 <img class="Projecten__img" src="<?php echo $project['img']; ?>" alt="hallo">
                 <?php echo $project['naam']; ?>
             </a>

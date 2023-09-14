@@ -14,12 +14,14 @@ $project = $stmt->fetch(PDO::FETCH_ASSOC);
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <title><?php echo $project['naam']; ?> Project Detail</title> <!-- Use the project name in the title -->
 </head>
+
 <body>
     <header class="header">
         <nav class="header__nav">
@@ -32,14 +34,25 @@ $project = $stmt->fetch(PDO::FETCH_ASSOC);
         </nav>
     </header>
 
-    <main class="main">
-        <article class="Projecten">
-            <h3 class="Projecten__title"><?php echo $project['naam']; ?></h3>
-            <div class="Projecten__details">
-                <img class="Projecten__img" src="<?php echo $project['img']; ?>" alt="<?php echo $project['naam']; ?>">
+    <main class="ProjectMain">
+        <article class="ProjectMain__artcLeft">
+            <h3 class="ProjectMain__title"><?php echo $project['naam']; ?></h3>
+            <div class="ProjectMain__details">
+                <img class="ProjectMain__img" src="<?php echo $project['img']; ?>" alt="<?php echo $project['naam']; ?>">
                 <!-- Display other project details as needed -->
             </div>
         </article>
+
+        <article class="ProjectMain__artcRight">
+            <h4 class="ProjectMain__omschrijving">omschrijving</h4>
+            <p class="ProjectMain__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis sapiente odit saepe! Id aperiam asperiores earum eum quod reprehenderit dolore voluptate ipsum aliquid quia. Perferendis quis rerum modi nihil eius!</p>
+            <div class="ProjectMain__Buttons">
+                <button class="ProjectMain__Button projectMain__Button--github">Github </button>
+                <button class="ProjectMain__Button projectMain__Button--live">Live </button>
+            </div>
+
+        </article>
     </main>
 </body>
+
 </html>
