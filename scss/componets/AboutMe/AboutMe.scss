@@ -1,0 +1,65 @@
+.aboutMe {
+    height: 90vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  
+   
+
+
+    &__left{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     width: 50%;
+    }
+
+
+    &__title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    &__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      padding: 4rem;
+        
+    }
+
+    
+    &__right{
+        width: 40%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__list{
+        
+list-style: none;
+
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+
+gap: 2rem;
+
+    }
+
+    &__items{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    height: 10rem;
+    aspect-ratio: 1/1;
+background: black;
+    }
+}

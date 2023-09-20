@@ -26,7 +26,7 @@ $project = $stmt->fetch(PDO::FETCH_ASSOC);
 <header class="header">
         <nav class="header__nav">
             <ul class="header__ul">
-                <li class="header__li header__li--home"><a class="header__link" href="./index.html">Home</a></li>
+                <li class="header__li header__li--home"><a class="header__link" href="./index.php">Home</a></li>
                 <li class="header__li"><a class="header__link" href="./projecten.php">Projecten</a></li>
                 <li class="header__li"><a class="header__link" href="">About me</a></li>
                 <li class="header__li header__li"><a class="header__link header__link--contact" href="">contact</a></li>

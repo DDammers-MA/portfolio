@@ -2,20 +2,28 @@
 min-height: 100vh;
   margin-bottom: 2rem; /* Add margin to create space between Projecten and the footer */
   height: auto; 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
   flex-direction: column;
+ 
+  &--main{
+    color: white;
+  background: #333;
+   
+ }
 
   &__title {
     padding: 2rem;
     padding-top:4rem ;
     font-size: 150%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 
   }
 
   &__ul {
+   
     gap: 3rem;
     flex-wrap: wrap;
     display: flex;
@@ -23,6 +31,8 @@ min-height: 100vh;
     justify-content: center;
     list-style: none;
     padding: 2rem;
+
+
    
   }
 
@@ -31,11 +41,13 @@ min-height: 100vh;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background: white;
     height: 25rem;
     width: 25rem;
 box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0,0.8);
 border-radius: 0.5rem;
 transition: all 0.2s;
+border: 0.2rem solid rgb(0, 0, 0);
 
 &:hover{
   cursor: pointer;

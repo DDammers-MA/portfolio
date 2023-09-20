@@ -57,9 +57,40 @@ body {
   padding: 1rem;
 }
 
+.container .text {
+  position: relative;
+  color: #F31559;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.container .text.first__text {
+  color: black;
+}
+
+.text.second__text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  border-left: 0.2rem solid black;
+  animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+  40%, 60% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
 .main {
   flex-grow: 1;
-  overflow: auto;
+  overflow: hidden;
 }
 .main__article {
   flex-grow: 2;
@@ -73,6 +104,7 @@ body {
   border-radius: 1rem;
   box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.8);
   object-fit: contain;
+  border: 0.2rem solid rgb(0, 0, 0);
   border-radius: 50%;
 }
 .main__text {
@@ -106,50 +138,23 @@ body {
   height: 90vh;
 }
 
-.container .text {
-  position: relative;
-  color: #F31559;
-  font-size: 3rem;
-  font-weight: 600;
-}
-
-.container .text.first__text {
-  color: black;
-}
-
-.text.second__text::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: white;
-  border-left: 0.2rem solid black;
-  animation: animate 4s steps(12) infinite;
-}
-
-@keyframes animate {
-  40%, 60% {
-    left: 100%;
-  }
-  100% {
-    left: 0;
-  }
-}
 .Projecten {
   min-height: 100vh;
   margin-bottom: 2rem; /* Add margin to create space between Projecten and the footer */
   height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+}
+.Projecten--main {
+  color: white;
+  background: #333;
 }
 .Projecten__title {
   padding: 2rem;
   padding-top: 4rem;
   font-size: 150%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .Projecten__ul {
   gap: 3rem;
@@ -165,11 +170,13 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  background: white;
   height: 25rem;
   width: 25rem;
   box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.8);
   border-radius: 0.5rem;
   transition: all 0.2s;
+  border: 0.2rem solid rgb(0, 0, 0);
 }
 .Projecten__li:hover {
   cursor: pointer;
@@ -185,6 +192,55 @@ body {
 }
 .Projecten__img {
   height: 20rem;
+}
+
+.aboutMe {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.aboutMe__left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+.aboutMe__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+.aboutMe__text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem;
+}
+.aboutMe__right {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.aboutMe__list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.aboutMe__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+  aspect-ratio: 1/1;
+  background: black;
 }
 
 .footer {

@@ -1,23 +1,25 @@
-
+@use "../../abstracts/animations";
 .main {
     flex-grow: 1;
-    overflow: auto;
+    overflow: hidden;
+
+   
 
     &__article {
          flex-grow: 2; 
   display: flex;
   align-items: center;
+  
   justify-content: center; 
   min-height: 100vh;
-  
-    }
+ }
 
     &__img {
         height: 30rem;
         border-radius: 1rem;
         box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.8);
         object-fit: contain;
-       
+        border: 0.2rem solid rgb(0, 0, 0); 
         border-radius: 50%;
 
     }
@@ -63,36 +65,3 @@
     height: 90vh;
 
 }
-
-.container .text{
-    position: relative;
-    color: #F31559;
-    font-size: 3rem;
-    font-weight: 600;
-}
-
-.container .text.first__text{
-    color: black;
-}
-
-.text.second__text::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: white;
-    border-left: 0.2rem solid black;
-    animation: animate 4s steps(12) infinite;
-}
-
-@keyframes animate{
-    40%, 60%{
-        left: 100%;
-    }
-    100%{
-        left: 0;
-    }
-}
-
