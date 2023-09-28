@@ -16,6 +16,7 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="./src/main.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -25,11 +26,18 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <ul class="header__ul">
                 <li class="header__li header__li--home"><a class="header__link" href="./index.php">Home</a></li>
                 <li class="header__li"><a class="header__link" href="./projecten.php">Projecten</a></li>
-                <li class="header__li"><a class="header__link" href="">About me</a></li>
+                <li class="header__li"><a class="header__link" href="#AboutMe">About me</a></li>
                 <li class="header__li header__li"><a class="header__link header__link--contact" href="">contact</a></li>
 
             </ul>
+            
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
         </nav>
+     
     </header>
 
     <main class="main">

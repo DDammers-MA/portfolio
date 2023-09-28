@@ -17,6 +17,7 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e0075003b5.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script src="./src/main.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -28,9 +29,15 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <li class="header__li"><a class="header__link" href="./projecten.php">Projecten</a></li>
                 <li class="header__li"><a class="header__link" href="#AboutMe">About me</a></li>
                 <li class="header__li header__li"><a class="header__link header__link--contact" href="">contact</a></li>
-
             </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+         
         </nav>
+     
     </header>
 
     <main class="main">
@@ -83,7 +90,7 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 </p>
          </section> 
          <section class="aboutMe__right">
-            <img class="main__img" src="img/foto Daniel (2).jpg" alt="">
+            <img class="main__img main__img--2" src="img/foto Daniel (2).jpg" alt="">
          </section>
         </article>
 
@@ -91,10 +98,40 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <h2 class="skills__title">skills</h2>
 
                 <ul class="skills__list">
+
                 <li class="skills__listItem">
-                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-html5" style="color: #ff0000;"></i>
                 html
                 </li>
+
+                <li class="skills__listItem">
+                <i class="fa-brands fa-css3-alt" style="color: #005eff;"></i>
+                css
+                </li>
+
+                <li class="skills__listItem">
+                <i class="fa-brands fa-js" style="color: #ffff02;"></i>
+                javascript
+                </li>
+
+                <li class="skills__listItem">
+                <i class="fa-brands fa-sass" style="color: #ff00ea;"></i>
+                sass
+                </li>
+
+                
+                <li class="skills__listItem">
+                <i class="fa-brands fa-php" style="color: #00328a;"></i>
+                php
+                </li>
+
+                <li class="skills__listItem">
+                <i class="fa-solid fa-database"></i>
+                mysql
+                </li>
+
+       
+
                 </ul>
         </article>
     </main>
