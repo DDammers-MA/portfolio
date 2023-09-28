@@ -2,8 +2,9 @@
 .main {
     flex-grow: 1;
     overflow: hidden;
+  
+    background: linear-gradient(#BC7AF9, 30%, #AED2FF);
 
-   
 
     &__article {
          flex-grow: 2; 
@@ -30,10 +31,11 @@
         justify-content: center;
         flex-direction: column;
         margin-left: 5%;
+        color: white;
     }
 
 &__socials {
-    color: #333;
+    color: white;
     list-style: none;
     display: flex;
     align-items: center;

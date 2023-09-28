@@ -72,8 +72,9 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </article>
 
         <article id="AboutMe" class="aboutMe">
+        <h2 class="aboutMe__title"> about me</h1>
          <section class="aboutMe__left">
-            <h2 class="aboutMe__title"> about me</h1>
+         
                 <p class="aboutMe__text">
                     Hallo mijn naam is Daniel Dammers en ik ben een student op het mediacollege Amsterdam voor de afgelopen 2.5 jaar. Ik heb voor de opleiding software-devloper gekozen en specialiseer vooral in Front-end,<br>
                     omdat ik het leuker vind om website's in nieuwe en andere manier te style/maken en elke keer en andere manier vinden om iets te leuks te maken. <br>
@@ -81,16 +82,25 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     wat ik graag ik nog wat meer wil leren is back-end ik heb gezien wat je er allemaal me kan doen ik denk dat als ik mijn front-end en back-end zou kunnen combineren dat ik hele gave website kan maken
                 </p>
          </section> 
-         
          <section class="aboutMe__right">
             <img class="main__img" src="img/foto Daniel (2).jpg" alt="">
          </section>
         </article>
+
+        <article class="skills">
+                <h2 class="skills__title">skills</h2>
+
+                <ul class="skills__list">
+                <li class="skills__listItem">
+                <i class="fa-brands fa-html5"></i>
+                html
+                </li>
+                </ul>
+        </article>
     </main>
 
     <footer class="footer">
-        <p>&copy; gemaakt door Daniël Dammers</p>
- 
+        <p class="footer__copy">&copy; gemaakt door Daniël Dammers</p>
     </footer>
 </body>
 

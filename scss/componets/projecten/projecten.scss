@@ -3,11 +3,12 @@ min-height: 100vh;
   margin-bottom: 2rem; /* Add margin to create space between Projecten and the footer */
   height: auto; 
 
+
   flex-direction: column;
  
   &--main{
     color: white;
-  background: #333;
+
    
  }
 
@@ -61,7 +62,7 @@ border: 0.2rem solid rgb(0, 0, 0);
     justify-content: center;
     text-decoration: none;
     flex-direction: column;
-    color: black;
+    color: white;
   }
 
   &__img {

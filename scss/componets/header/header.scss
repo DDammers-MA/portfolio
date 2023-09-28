@@ -1,6 +1,6 @@
 .header {
     height: 10vh;
-
+background: #BC7AF9;
     &__nav {
         height: 100%;
         width: 100%;
@@ -38,16 +38,8 @@
     &__link {
 
         text-decoration: none;
-        color: #333;
-
-        &--contact{
-            background: #333;
-            color: white;
-            border-radius: 0.5rem;
-            padding: 1rem;
-
-        }
-
+        color: white;
+    
     
     }
 

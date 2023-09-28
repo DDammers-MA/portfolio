@@ -1,0 +1,17 @@
+.skills{
+    height: 100vh;
+ 
+
+    &__title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+}

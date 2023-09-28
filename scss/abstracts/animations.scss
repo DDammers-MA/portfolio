@@ -4,10 +4,11 @@
     color: #F31559;
     font-size: 3rem;
     font-weight: 600;
+   
 }
 
 .container .text.first__text{
-    color: black;
+    color: white;
 }
 
 .text.second__text::before{
@@ -17,9 +18,10 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: white;
+    background: #B795FB;
     border-left: 0.2rem solid black;
     animation: animate 4s steps(12) infinite;
+
   
 }
 

@@ -6,6 +6,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -23,6 +24,7 @@ body {
 
 .header {
   height: 10vh;
+  background: #BC7AF9;
 }
 .header__nav {
   height: 100%;
@@ -48,13 +50,7 @@ body {
 }
 .header__link {
   text-decoration: none;
-  color: #333;
-}
-.header__link--contact {
-  background: #333;
   color: white;
-  border-radius: 0.5rem;
-  padding: 1rem;
 }
 
 .container .text {
@@ -65,7 +61,7 @@ body {
 }
 
 .container .text.first__text {
-  color: black;
+  color: white;
 }
 
 .text.second__text::before {
@@ -75,7 +71,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background: white;
+  background: #B795FB;
   border-left: 0.2rem solid black;
   animation: animate 4s steps(12) infinite;
 }
@@ -91,6 +87,7 @@ body {
 .main {
   flex-grow: 1;
   overflow: hidden;
+  background: linear-gradient(#BC7AF9, 30%, #AED2FF);
 }
 .main__article {
   flex-grow: 2;
@@ -113,9 +110,10 @@ body {
   justify-content: center;
   flex-direction: column;
   margin-left: 5%;
+  color: white;
 }
 .main__socials {
-  color: #333;
+  color: white;
   list-style: none;
   display: flex;
   align-items: center;
@@ -146,7 +144,6 @@ body {
 }
 .Projecten--main {
   color: white;
-  background: #333;
 }
 .Projecten__title {
   padding: 2rem;
@@ -188,24 +185,25 @@ body {
   justify-content: center;
   text-decoration: none;
   flex-direction: column;
-  color: black;
+  color: white;
 }
 .Projecten__img {
   height: 20rem;
 }
 
 .aboutMe {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 .aboutMe__left {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 50%;
+  width: 60%;
 }
 .aboutMe__title {
   display: flex;
@@ -244,13 +242,14 @@ body {
 }
 
 .footer {
-  height: 5rem;
+  height: 20rem;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #333; /* Choose a background color for your footer */
   color: white; /* Choose a text color for your footer */
   font-size: 1.6rem;
+  flex-direction: column;
 }
 
 .ProjectMain {
@@ -319,6 +318,21 @@ body {
   transition: 0.2s all;
   background: black;
   color: white;
+}
+
+.skills {
+  height: 100vh;
+}
+.skills__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.skills__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 /*# sourceMappingURL=style.css.map */
