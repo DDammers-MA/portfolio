@@ -19,3 +19,4 @@ document.querySelectorAll(".header__link").forEach(n => n.addEventListener("clic
 
     document.body.style.overflow = "auto"; // Enable scrolling
 }));
+

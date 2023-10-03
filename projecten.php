@@ -26,9 +26,9 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <ul class="header__ul">
                 <li class="header__li header__li--home"><a class="header__link" href="./index.php">Home</a></li>
                 <li class="header__li"><a class="header__link" href="./projecten.php">Projecten</a></li>
-                <li class="header__li"><a class="header__link" href="#AboutMe">About me</a></li>
-                <li class="header__li header__li"><a class="header__link header__link--contact" href="">contact</a></li>
-
+                <li class="header__li"><a class="header__link" href="./index.php#AboutMe">About me</a></li>
+                <li class="header__li header__li"><a class="header__link header__link--contact" href="./index.php#contact">contact</a></li>
+           
             </ul>
             
             <div class="hamburger">

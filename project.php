@@ -29,9 +29,9 @@ $project = $stmt->fetch(PDO::FETCH_ASSOC);
             <ul class="header__ul">
                 <li class="header__li header__li--home"><a class="header__link" href="./index.php">Home</a></li>
                 <li class="header__li"><a class="header__link" href="./projecten.php">Projecten</a></li>
-                <li class="header__li"><a class="header__link" href="#AboutMe">About me</a></li>
-                <li class="header__li header__li"><a class="header__link header__link--contact" href="">contact</a></li>
-
+                <li class="header__li"><a class="header__link" href="./index.php#AboutMe">About me</a></li>
+                <li class="header__li header__li"><a class="header__link header__link--contact" href="./index.php#contact">contact</a></li>
+           
             </ul>
             
             <div class="hamburger">
@@ -54,12 +54,11 @@ $project = $stmt->fetch(PDO::FETCH_ASSOC);
 
         <article class="ProjectMain__artcRight">
             <h4 class="ProjectMain__omschrijving">omschrijving</h4>
-            <p class="ProjectMain__text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis sapiente odit saepe! Id aperiam asperiores earum eum quod reprehenderit dolore voluptate ipsum aliquid quia. Perferendis quis rerum modi nihil eius!</p>
+            <p class="ProjectMain__text"> <?php echo $project['omschrijving']; ?> </p>
             <div class="ProjectMain__Buttons">
-                <button class="ProjectMain__Button projectMain__Button--github">Github </button>
+                <button class="ProjectMain__Button projectMain__Button--github"> <a target="_blank"  href="<?php echo $project['github']; ?>">Github</a></button>
                 <button class="ProjectMain__Button projectMain__Button--live">Live </button>
             </div>
-
         </article>
     </main>
 </body>

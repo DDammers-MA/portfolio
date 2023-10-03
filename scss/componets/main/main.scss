@@ -1,17 +1,19 @@
 @use "../../abstracts/animations";
 .main {
-    flex-grow: 1;
+    height: 100%;
     overflow: hidden;
-  
+    flex-grow: 1;
+
 
     &__article {
-         flex-grow: 2; 
+    height: 100vh;
   display: flex;
   align-items: center;
-  
   justify-content: center; 
-  min-height: 100vh;
+ 
+  
  }
+
 
     &__img {
         height: 30rem;
@@ -30,11 +32,11 @@
         justify-content: center;
         flex-direction: column;
         margin-left: 5%;
-        color: white;
+     
     }
 
 &__socials {
-    color: white;
+
     list-style: none;
     display: flex;
     align-items: center;
@@ -43,18 +45,21 @@
     text-decoration: none;
 }
 
-&__socials a{
 
-    text-decoration: none;
-}
 
 &__social{
+    
     display: flex;
     align-items: center;
     justify-content: center;
     height: 5rem;
     width: 5rem;
+    text-decoration: none;
+   
     
+    &:hover{
+        color: crimson;
+    }
 }
 
 
@@ -63,6 +68,6 @@
 }
 
 .bodyProject {
-    height: 90vh;
+    height: 100vh;
 
 }

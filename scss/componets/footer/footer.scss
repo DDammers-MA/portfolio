@@ -1,12 +1,39 @@
 .footer {
-    height: 20rem;
+  height: 20rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  font-size: 1.6rem;
+
+  background: white;
+
+
+  &__div {
+    height: 50%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #333; /* Choose a background color for your footer */
-    color: white; /* Choose a text color for your footer */
-    font-size: 1.6rem;
+align-items: flex-start;
+justify-content: flex-start;
     flex-direction: column;
+ 
+  }
+  &__list {
+   font-size: 120%;
+  list-style: none;
 
  
   }
+  
+  &__link{
+    color: black;
+    text-decoration: none;
+
+  }
+
+  &__listItem > a{
+    color: black;
+    text-decoration: none;
+  }
+
+}
+

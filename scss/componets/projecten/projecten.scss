@@ -1,17 +1,10 @@
 .Projecten {
   height: 30vh;
-  margin-bottom: 2rem; /* Add margin to create space between Projecten and the footer */
+  margin-bottom: 10rem; /* Add margin to create space between Projecten and the footer */
   height: auto; 
-
-
   flex-direction: column;
- 
-  &--main{
-    color: white;
 
-   
- }
-
+  
   &__title {
     padding: 2rem;
     padding-top:4rem ;
@@ -19,6 +12,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    color: crimson;
 
 
   }
@@ -42,13 +36,14 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-   
-    height: 25rem;
-    width: 25rem;
+  
+    height: 20rem;
+    width: 30rem;
+    object-fit: contain;
 box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0,0.8);
 border-radius: 0.5rem;
 transition: all 0.2s;
-border: 0.2rem solid rgb(0, 0, 0);
+
 
 &:hover{
   cursor: pointer;
@@ -57,16 +52,21 @@ border: 0.2rem solid rgb(0, 0, 0);
   }
 
   &__Link{
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     flex-direction: column;
-    color: white;
+    color: black;
+   
   }
 
   &__img {
-    height: 20rem;
+   height: 90%;
+width: 100%;
+border-radius: 0.5rem;
+
   }
 
 }

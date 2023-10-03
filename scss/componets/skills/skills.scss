@@ -1,11 +1,15 @@
 .skills{
-    height: auto;
-
+    height: 100vh;
+    margin-top: 10rem;
+    
 
     &__title{
         display: flex;
         align-items: center;
         justify-content: center;
+        color: crimson;
+       
+        
     }
 
     &__list{
@@ -18,19 +22,21 @@
     }
 
     &__listItem{
-     width: 33%; 
+     width: 25%; 
+margin-top: 5rem;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         font-size: 3rem;
-  
+   
     }
 
     
     &__listItem > i{
-        font-size: 15rem;
-        color: white;
+        
+        font-size: 10rem;
+      
       
      }
 }

@@ -20,14 +20,12 @@ body {
   flex-direction: column;
   min-height: 100vh;
   margin: 0;
-  background: linear-gradient(#BC7AF9, 30%, #AED2FF);
 }
 
 .header {
-  height: 10vh;
-  background: #BC7AF9;
   position: relative;
   z-index: 1;
+  transition: background-color 0.5s ease;
 }
 .header__nav {
   height: 100%;
@@ -45,15 +43,14 @@ body {
   list-style: none;
   gap: 10rem;
 }
-.header__ul:hover {
-  color: black;
-}
 .header__li {
   font-size: 120%;
 }
 .header__link {
   text-decoration: none;
-  color: white;
+}
+.header__link:hover {
+  color: crimson;
 }
 
 .hamburger {
@@ -76,45 +73,21 @@ body {
 
 .container .text {
   position: relative;
-  color: #F31559;
+  color: crimson;
   font-size: 3rem;
   font-weight: 600;
 }
 
-.container .text.first__text {
-  color: white;
-}
-
-.text.second__text::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: #B795FB;
-  border-left: 0.2rem solid black;
-  animation: animate 4s steps(12) infinite;
-}
-
-@keyframes animate {
-  40%, 60% {
-    left: 100%;
-  }
-  100% {
-    left: 0;
-  }
-}
 .main {
-  flex-grow: 1;
+  height: 100%;
   overflow: hidden;
+  flex-grow: 1;
 }
 .main__article {
-  flex-grow: 2;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
 }
 .main__img {
   height: 30rem;
@@ -131,18 +104,13 @@ body {
   justify-content: center;
   flex-direction: column;
   margin-left: 5%;
-  color: white;
 }
 .main__socials {
-  color: white;
   list-style: none;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  text-decoration: none;
-}
-.main__socials a {
   text-decoration: none;
 }
 .main__social {
@@ -151,20 +119,21 @@ body {
   justify-content: center;
   height: 5rem;
   width: 5rem;
+  text-decoration: none;
+}
+.main__social:hover {
+  color: crimson;
 }
 
 .bodyProject {
-  height: 90vh;
+  height: 100vh;
 }
 
 .Projecten {
   height: 30vh;
-  margin-bottom: 2rem; /* Add margin to create space between Projecten and the footer */
+  margin-bottom: 10rem; /* Add margin to create space between Projecten and the footer */
   height: auto;
   flex-direction: column;
-}
-.Projecten--main {
-  color: white;
 }
 .Projecten__title {
   padding: 2rem;
@@ -173,6 +142,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: crimson;
 }
 .Projecten__ul {
   gap: 3rem;
@@ -188,27 +158,30 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 25rem;
-  width: 25rem;
+  height: 20rem;
+  width: 30rem;
+  object-fit: contain;
   box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.8);
   border-radius: 0.5rem;
   transition: all 0.2s;
-  border: 0.2rem solid rgb(0, 0, 0);
 }
 .Projecten__li:hover {
   cursor: pointer;
   transform: scale(1.1);
 }
 .Projecten__Link {
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   text-decoration: none;
   flex-direction: column;
-  color: white;
+  color: black;
 }
 .Projecten__img {
-  height: 20rem;
+  height: 90%;
+  width: 100%;
+  border-radius: 0.5rem;
 }
 
 .aboutMe {
@@ -217,13 +190,14 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  color: crimson;
 }
 .aboutMe__left {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  width: 60%;
+  width: 55%;
 }
 .aboutMe__title {
   display: flex;
@@ -266,10 +240,28 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #333; /* Choose a background color for your footer */
-  color: white; /* Choose a text color for your footer */
+  gap: 10rem;
   font-size: 1.6rem;
+  background: white;
+}
+.footer__div {
+  height: 50%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
   flex-direction: column;
+}
+.footer__list {
+  font-size: 120%;
+  list-style: none;
+}
+.footer__link {
+  color: black;
+  text-decoration: none;
+}
+.footer__listItem > a {
+  color: black;
+  text-decoration: none;
 }
 
 .ProjectMain {
@@ -291,6 +283,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 2rem;
+  color: crimson;
 }
 .ProjectMain__details {
   height: 70%;
@@ -299,6 +292,7 @@ body {
   justify-content: center;
 }
 .ProjectMain__img {
+  background: white;
   height: 40rem;
   aspect-ratio: 1/1;
   display: flex;
@@ -321,6 +315,7 @@ body {
 }
 .ProjectMain__text {
   width: 50ch;
+  margin-bottom: 2rem;
 }
 .ProjectMain__Buttons {
   display: flex;
@@ -339,17 +334,22 @@ body {
 }
 .ProjectMain__Button:hover {
   transition: 0.2s all;
-  background: black;
-  color: white;
+  background: crimson;
+}
+.ProjectMain__Button > a {
+  text-decoration: none;
+  color: black;
 }
 
 .skills {
-  height: auto;
+  height: 100vh;
+  margin-top: 10rem;
 }
 .skills__title {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: crimson;
 }
 .skills__list {
   display: flex;
@@ -360,7 +360,8 @@ body {
   padding: 2rem;
 }
 .skills__listItem {
-  width: 33%;
+  width: 25%;
+  margin-top: 5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -368,10 +369,50 @@ body {
   font-size: 3rem;
 }
 .skills__listItem > i {
-  font-size: 15rem;
-  color: white;
+  font-size: 10rem;
 }
 
+@media screen and (max-width: 52rem) {
+  .ProjectMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .ProjectMain__title {
+    font-size: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .ProjectMain__details {
+    margin-bottom: 5rem;
+  }
+  .ProjectMain__img {
+    height: 30rem;
+    aspect-ratio: 1/1;
+  }
+  .ProjectMain__artcLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .ProjectMain__omschrijving {
+    margin-bottom: 1rem;
+  }
+  .ProjectMain__text {
+    margin-bottom: 1rem;
+  }
+  .footer {
+    height: auto;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2rem;
+  }
+}
 @media screen and (max-width: 42.625rem) {
   .header__ul {
     gap: 5rem;
@@ -379,6 +420,9 @@ body {
   .header__li {
     font-size: 100%;
     gap: 1rem;
+  }
+  .main {
+    overflow: hidden;
   }
   .main__img {
     transition: transform 0.5s ease;
@@ -391,29 +435,36 @@ body {
   .main__text {
     color: black;
   }
+  .container .text {
+    font-size: 120%;
+  }
+  .aboutMe {
+    height: 100%;
+    margin-bottom: 5rem;
+  }
+  .ProjectMain__Button {
+    margin-bottom: 2rem;
+  }
+  .skills__list {
+    gap: 5rem;
+  }
+  .skills__listItem > i {
+    font-size: 8rem;
+  }
+  .skills .text.second__text::before {
+    display: none;
+  }
+  .skills .footer {
+    margin-top: 5rem;
+    gap: 1rem;
+    flex-direction: column;
+    padding-right: 0;
+  }
 }
-.container .text {
-  font-size: 120%;
-}
-
-.aboutMe {
-  height: 100%;
-  margin-bottom: 5rem;
-}
-
-.skills__list {
-  gap: 5rem;
-}
-.skills__listItem > i {
-  font-size: 8rem;
-}
-.skills .text.second__text::before {
-  display: none;
-}
-
 @media screen and (max-width: 38.125rem) {
   .main {
     height: 100%;
+    overflow: hidden;
   }
   .main__article {
     flex-direction: column;
@@ -430,10 +481,54 @@ body {
   .container .text {
     font-size: 90%;
   }
+  .ProjectMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .ProjectMain__title {
+    font-size: 3rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  .ProjectMain__details {
+    margin-bottom: 5rem;
+  }
+  .ProjectMain__img {
+    height: 30rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .ProjectMain__artcLeft {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+  .ProjectMain__omschrijving {
+    margin-bottom: 1rem;
+  }
+  .ProjectMain__text {
+    width: 25ch;
+    margin-bottom: 1rem;
+  }
+  .footer {
+    margin-top: 5rem;
+    gap: 1rem;
+    flex-direction: column;
+    padding-right: 0;
+  }
 }
 @media screen and (max-width: 26rem) {
   .main {
     height: 100%;
+    overflow: hidden;
   }
   .main__article {
     flex-direction: column;
@@ -465,6 +560,12 @@ body {
   }
   .skills__listItem > i {
     font-size: 8rem;
+  }
+  .footer {
+    margin-top: 5rem;
+    gap: 1rem;
+    flex-direction: column;
+    padding-right: 0;
   }
   .hamburger {
     display: block;

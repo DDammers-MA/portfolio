@@ -1,36 +1,36 @@
 
 .container .text{
     position: relative;
-    color: #F31559;
+    color: crimson;
     font-size: 3rem;
     font-weight: 600;
    
 }
 
-.container .text.first__text{
-    color: white;
-}
+// .container .text.first__text{
+//     color: white;
+// }
 
-.text.second__text::before{
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: #B795FB;
-    border-left: 0.2rem solid black;
-    animation: animate 4s steps(12) infinite;
+// .text.second__text::before{
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     height: 100%;
+//     width: 100%;
+//     background: #B795FB;
+//     border-left: 0.2rem solid black;
+//     animation: animate 4s steps(12) infinite;
 
   
-}
+// }
 
-@keyframes animate{
-    40%, 60%{
-        left: 100%;
-    }
-    100%{
-        left: 0;
-    }
-}
+// @keyframes animate{
+//     40%, 60%{
+//         left: 100%;
+//     }
+//     100%{
+//         left: 0;
+//     }
+// }
 
