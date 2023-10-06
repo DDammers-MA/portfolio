@@ -1,8 +1,11 @@
+@use "../../abstracts/animations";
+
 .Projecten {
   height: 30vh;
   margin-bottom: 10rem; /* Add margin to create space between Projecten and the footer */
   height: auto; 
   flex-direction: column;
+  
 
   
   &__title {
@@ -18,7 +21,7 @@
   }
 
   &__ul {
-   
+    animation: fadeInAnimation 1s ease-in-out forwards;
     gap: 3rem;
     flex-wrap: wrap;
     display: flex;
@@ -26,6 +29,9 @@
     justify-content: center;
     list-style: none;
     padding: 2rem;
+   
+ 
+ 
 
 
    
@@ -36,13 +42,15 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-  
+    
     height: 20rem;
     width: 30rem;
     object-fit: contain;
 box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0,0.8);
 border-radius: 0.5rem;
 transition: all 0.2s;
+
+
 
 
 &:hover{
@@ -60,6 +68,7 @@ transition: all 0.2s;
     flex-direction: column;
     color: black;
    
+
   }
 
   &__img {
@@ -67,6 +76,9 @@ transition: all 0.2s;
 width: 100%;
 border-radius: 0.5rem;
 
+
   }
+
+  
 
 }

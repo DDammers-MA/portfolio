@@ -33,9 +33,9 @@ color: crimson;
     }
 
     &__img{
-        background: white;
-       height: 40rem;
-       aspect-ratio: 1/1;
+        
+       height: 25rem;
+
        display: flex;
        align-items: center;
        justify-content: center;
@@ -57,6 +57,7 @@ flex-direction: column;
     &__omschrijving{
       
         margin-bottom: 1rem;
+        color: crimson;
     }
 
     &__text{
@@ -90,6 +91,8 @@ flex-direction: column;
         &:hover{
             transition: 0.2s all;
             background: crimson;
+            color: white;
+            border: none;
            
         }
     }
@@ -98,5 +101,7 @@ flex-direction: column;
         &__Button > a{
             text-decoration: none;
             color: black;
+
+            
         }
 }

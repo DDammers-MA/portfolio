@@ -7,30 +7,39 @@
    
 }
 
-// .container .text.first__text{
-//     color: white;
-// }
+.container .text.first__text{
+    color: white;
+}
 
-// .text.second__text::before{
-//     content: "";
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     height: 100%;
-//     width: 100%;
-//     background: #B795FB;
-//     border-left: 0.2rem solid black;
-//     animation: animate 4s steps(12) infinite;
+.text.second__text::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: white;
+    border-left: 0.2rem solid black;
+    animation: animate 4s steps(12) infinite;
 
   
-// }
+}
 
-// @keyframes animate{
-//     40%, 60%{
-//         left: 100%;
-//     }
-//     100%{
-//         left: 0;
-//     }
-// }
+@keyframes animate{
+    40%, 60%{
+        left: 100%;
+    }
+    100%{
+        left: 0;
+    }
+}
 
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Apply the fade-in effect when the elements enter the viewport */
+.fade-in.fade-in-visible {
+    opacity: 1;
+}

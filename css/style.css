@@ -48,6 +48,7 @@ body {
 }
 .header__link {
   text-decoration: none;
+  color: black;
 }
 .header__link:hover {
   color: crimson;
@@ -76,6 +77,40 @@ body {
   color: crimson;
   font-size: 3rem;
   font-weight: 600;
+}
+
+.container .text.first__text {
+  color: white;
+}
+
+.text.second__text::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: white;
+  border-left: 0.2rem solid black;
+  animation: animate 4s steps(12) infinite;
+}
+
+@keyframes animate {
+  40%, 60% {
+    left: 100%;
+  }
+  100% {
+    left: 0;
+  }
+}
+.fade-in {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Apply the fade-in effect when the elements enter the viewport */
+.fade-in.fade-in-visible {
+  opacity: 1;
 }
 
 .main {
@@ -120,6 +155,7 @@ body {
   height: 5rem;
   width: 5rem;
   text-decoration: none;
+  color: black;
 }
 .main__social:hover {
   color: crimson;
@@ -145,6 +181,7 @@ body {
   color: crimson;
 }
 .Projecten__ul {
+  animation: fadeInAnimation 1s ease-in-out forwards;
   gap: 3rem;
   flex-wrap: wrap;
   display: flex;
@@ -242,7 +279,7 @@ body {
   align-items: center;
   gap: 10rem;
   font-size: 1.6rem;
-  background: white;
+  background: black;
 }
 .footer__div {
   height: 50%;
@@ -256,11 +293,13 @@ body {
   list-style: none;
 }
 .footer__link {
-  color: black;
   text-decoration: none;
 }
+.footer__title {
+  color: crimson;
+}
 .footer__listItem > a {
-  color: black;
+  color: white;
   text-decoration: none;
 }
 
@@ -292,9 +331,7 @@ body {
   justify-content: center;
 }
 .ProjectMain__img {
-  background: white;
-  height: 40rem;
-  aspect-ratio: 1/1;
+  height: 25rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -312,6 +349,7 @@ body {
 }
 .ProjectMain__omschrijving {
   margin-bottom: 1rem;
+  color: crimson;
 }
 .ProjectMain__text {
   width: 50ch;
@@ -335,6 +373,8 @@ body {
 .ProjectMain__Button:hover {
   transition: 0.2s all;
   background: crimson;
+  color: white;
+  border: none;
 }
 .ProjectMain__Button > a {
   text-decoration: none;
@@ -573,18 +613,6 @@ body {
     right: 0;
     top: 0;
   }
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(1rem) rotate(45deg);
-    width: 5rem;
-  }
-  .hamburger.active .bar:nth-child(2) {
-    transform: scale(0);
-    /* Hide the middle bar by scaling it to 0 */
-  }
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-1rem) rotate(-45deg);
-    width: 5rem;
-  }
   .header__ul {
     /* Set initial left position to -100% */
     left: -100%;
@@ -592,7 +620,7 @@ body {
     top: 7rem;
     gap: 0;
     flex-direction: column;
-    background: #BC7AF9;
+    background: crimson;
     width: 100%;
     height: 100%;
     text-align: center;

@@ -6,7 +6,7 @@
   gap: 10rem;
   font-size: 1.6rem;
 
-  background: white;
+  background: black;
 
 
   &__div {
@@ -25,13 +25,17 @@ justify-content: flex-start;
   }
   
   &__link{
-    color: black;
+  
     text-decoration: none;
 
   }
 
+  &__title{
+    color: crimson;
+  }
+
   &__listItem > a{
-    color: black;
+   color: white;
     text-decoration: none;
   }
 

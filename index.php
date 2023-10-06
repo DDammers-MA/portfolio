@@ -49,8 +49,8 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <div class="main__text">
                 <p>Hello! i'm Daniël Dammers</p>
                 <ul class="container">
-                    <span class="text first__text">I'm a</span>
-                    <span class="text second__text">Front-end Developer </span>
+                  
+                    <span class="text second__text">I'm a Front-end Developer </span>
                 </ul>
 
                 <ul class="main__socials">

@@ -41,7 +41,7 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </header>
 
     <main class="main">
-        <article class="Projecten">
+        <article class="Projecten fade-in">
             <h3 class="Projecten__title">Projecten</h3>
 
             <ul class="Projecten__ul">
@@ -57,6 +57,45 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </article>
     </main>
 
+
+    <footer class="footer">
+
+
+<div class="footer__div">
+    <h3 class="footer__title">navigatie</h3>
+
+    <ul class="footer__list">
+
+        <li class="footer__listItem"><a class="footer__link" href="./index.php">Home</a></li>
+        <li class="footer__listItem"><a class="footer__link" href="./projecten.php">Projecten</a></li>
+        <li class="footer__listItem"><a class="footer__link" href="#AboutMe">About me</a></li>
+        <li class="footer__listItem"><a class="footer__link header__link--contact" href="">contact</a></li>
+    </ul>
+</div>
+
+
+<div class="footer__div">
+    <h3 class="footer__title">find me</h3>
+
+    <ul class="footer__list">
+
+        <li class="footer__listItem"><a class="footer__link" href="https://www.linkedin.com/in/dani%C3%ABl-d-17093a23b/">linkedin</a></li>
+        <li class="footer__listItem"><a class="footer__link" href="https://github.com/DDammers-MA">github</a></li>
+
+    </ul>
+</div>
+
+<div class="footer__div">
+    <h3 id="contact" class="footer__title">contact</h3>
+
+    <ul class="footer__list">
+
+        <li class="footer__listItem"> <a href="tel:0610039069">0610039060</a></li>
+        <li class="footer__listItem"> <a href="mailto:Dammersdaniel@gmail.com">Dammersdaniel@gmail.com</a> </li>
+        <li class="footer__listItem"> <a href="mailto:daniel@dammienet.nl">daniel@dammienet.nl</a></li>
+    </ul>
+</div>
+</footer>
 </body>
 
 </html>

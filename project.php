@@ -57,7 +57,7 @@ $project = $stmt->fetch(PDO::FETCH_ASSOC);
             <p class="ProjectMain__text"> <?php echo $project['omschrijving']; ?> </p>
             <div class="ProjectMain__Buttons">
                 <button class="ProjectMain__Button projectMain__Button--github"> <a target="_blank"  href="<?php echo $project['github']; ?>">Github</a></button>
-                <button class="ProjectMain__Button projectMain__Button--live">Live </button>
+                <button class="ProjectMain__Button projectMain__Button--live"> <a target="_blank"  href="<?php echo $project['live']; ?>">Live</a> </button>
             </div>
         </article>
     </main>
