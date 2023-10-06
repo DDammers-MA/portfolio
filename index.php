@@ -1,3 +1,4 @@
+
 <?php
 require 'config.php';
 require 'function.php';
@@ -16,6 +17,10 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/e0075003b5.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="css/style.css">
     <script src="./src/main.js" defer></script>
     <title>Document</title>
@@ -40,8 +45,8 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
     </header>
 
-    <main class="main">
-        <article class="main__article">
+    <main class="main ">
+        <article class="main__article animate__animated animate__fadeInUp">
 
             <img class="main__img" src="img/foto Daniel9.webp" alt="">
 
@@ -62,7 +67,7 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </article>
 
 
-        <article class="Projecten Projecten--main">
+        <article class="Projecten Projecten--main  animate__animated animate__fadeInUp">
             <h3 class="Projecten__title">uitgelichte projecten</h3>
 
             <ul class="Projecten__ul">
@@ -77,7 +82,7 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
             </ul>
         </article>
 
-        <article id="AboutMe" class="aboutMe">
+        <article id="AboutMe" class="aboutMe animate__animated animate__fadeInUp">
             <h2 class="aboutMe__title"> about me</h1>
                 <section class="aboutMe__left">
 
@@ -94,7 +99,7 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 </section>
         </article>
 
-        <article class="skills">
+        <article class="skills animate__animated animate__fadeInUp">
             <h2 class="skills__title">skills</h2>
 
             <ul class="skills__list">
@@ -136,7 +141,7 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </article>
     </main>
 
-    <footer class="footer">
+    <footer class="footer animate__animated animate__fadeInUp">
 
 
         <div class="footer__div">

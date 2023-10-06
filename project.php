@@ -19,12 +19,16 @@ $project = $stmt->fetch(PDO::FETCH_ASSOC);
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <script src="./src/main.js" defer></script>
     <title><?php echo $project['naam']; ?> Project Detail</title> <!-- Use the project name in the title -->
 </head>
 
 <body>
-<header class="header">
+<header class="header animate__animated animate__fadeInUp">
         <nav class="header__nav">
             <ul class="header__ul">
                 <li class="header__li header__li--home"><a class="header__link" href="./index.php">Home</a></li>
@@ -43,8 +47,8 @@ $project = $stmt->fetch(PDO::FETCH_ASSOC);
      
     </header>
 
-    <main class="ProjectMain">
-        <article class="ProjectMain__artcLeft">
+    <main class="ProjectMain animate__animated animate__fadeInUp">
+        <article class="ProjectMain__artcLeft ">
             <h3 class="ProjectMain__title"><?php echo $project['naam']; ?></h3>
             <div class="ProjectMain__details">
                 <img class="ProjectMain__img" src="<?php echo $project['img']; ?>" alt="<?php echo $project['naam']; ?>">

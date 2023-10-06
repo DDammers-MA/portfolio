@@ -1,13 +1,15 @@
-@media screen and (max-width: 52rem) {
+@media screen and (max-width: 62rem) {
 
     .ProjectMain{
         display: flex;
         align-items: center;
         justify-content: center;
-            flex-direction: column;
+        flex-direction: column;
+       
         
             
             &__title{
+            margin-top: 5rem;
             font-size: 3rem;
             width: 100%;
             display: flex;
@@ -23,25 +25,32 @@
                     
                 }
             
-                &__img{
-                   height: 30rem;
-                   aspect-ratio: 1/1;
-                }
-            
                 &__artcLeft{
+                    margin-bottom: 5rem;
                     display: flex;
                     align-items: center;
                     justify-content: center;
                         flex-direction: column;
+                    
                     }
+
+                &__artcRight{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                  
             
                 &__omschrijving{
                     margin-bottom: 1rem;
+                    
                 }
             
                 &__text{
-                 
+                
                     margin-bottom: 1rem;
+                    width: 80%;
                 }
             
  
@@ -114,6 +123,7 @@
 
 }
 .ProjectMain{
+
 
 &__Button{
                
@@ -196,7 +206,7 @@
         
             
             &__title{
-            font-size: 3rem;
+            font-size: 2.5rem;
             width: 100%;
             display: flex;
             align-items: center;
@@ -212,8 +222,7 @@
                 }
             
                 &__img{
-                   height: 30rem;
-                   aspect-ratio: 1/1;
+                height: 15rem;
                    display: flex;
                    align-items: center;
                    justify-content: center;
@@ -226,12 +235,23 @@
                     width: 100%;
                     }
             
+
+                    &__artcRivht{
+                       width: 100%;
+                       
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                       
+                    }
+
                 &__omschrijving{
                     margin-bottom: 1rem;
                 }
             
                 &__text{
-            width: 25ch;
+                    font-size: 90%;
                     margin-bottom: 1rem;
                   
 
@@ -266,6 +286,7 @@
 
 
         &__img {
+            
             transition: transform 0.5s ease;
 
             &--2 {

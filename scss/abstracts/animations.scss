@@ -33,13 +33,3 @@
         left: 0;
     }
 }
-
-.fade-in {
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-}
-
-/* Apply the fade-in effect when the elements enter the viewport */
-.fade-in.fade-in-visible {
-    opacity: 1;
-}

@@ -17,6 +17,8 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <script src="./src/main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
     <title>Document</title>
 </head>
 
@@ -41,10 +43,10 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </header>
 
     <main class="main">
-        <article class="Projecten fade-in">
+        <article class="Projecten animate__animated animate__fadeInUp">
             <h3 class="Projecten__title">Projecten</h3>
 
-            <ul class="Projecten__ul">
+            <ul class="Projecten__ul ">
     <?php foreach ($projects as $project): ?>
         <li class="Projecten__li">
             <a class="Projecten__Link" href="project.php?id=<?php echo $project['id']; ?>"> <!-- Add a link to the project detail page -->

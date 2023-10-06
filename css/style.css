@@ -103,16 +103,6 @@ body {
     left: 0;
   }
 }
-.fade-in {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-/* Apply the fade-in effect when the elements enter the viewport */
-.fade-in.fade-in-visible {
-  opacity: 1;
-}
-
 .main {
   height: 100%;
   overflow: hidden;
@@ -412,7 +402,7 @@ body {
   font-size: 10rem;
 }
 
-@media screen and (max-width: 52rem) {
+@media screen and (max-width: 62rem) {
   .ProjectMain {
     display: flex;
     align-items: center;
@@ -420,6 +410,7 @@ body {
     flex-direction: column;
   }
   .ProjectMain__title {
+    margin-top: 5rem;
     font-size: 3rem;
     width: 100%;
     display: flex;
@@ -430,21 +421,24 @@ body {
   .ProjectMain__details {
     margin-bottom: 5rem;
   }
-  .ProjectMain__img {
-    height: 30rem;
-    aspect-ratio: 1/1;
-  }
   .ProjectMain__artcLeft {
+    margin-bottom: 5rem;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+  }
+  .ProjectMain__artcRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .ProjectMain__omschrijving {
     margin-bottom: 1rem;
   }
   .ProjectMain__text {
     margin-bottom: 1rem;
+    width: 80%;
   }
   .footer {
     height: auto;
@@ -528,7 +522,7 @@ body {
     flex-direction: column;
   }
   .ProjectMain__title {
-    font-size: 3rem;
+    font-size: 2.5rem;
     width: 100%;
     display: flex;
     align-items: center;
@@ -539,8 +533,7 @@ body {
     margin-bottom: 5rem;
   }
   .ProjectMain__img {
-    height: 30rem;
-    aspect-ratio: 1/1;
+    height: 15rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -551,11 +544,18 @@ body {
     justify-content: center;
     width: 100%;
   }
+  .ProjectMain__artcRivht {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
   .ProjectMain__omschrijving {
     margin-bottom: 1rem;
   }
   .ProjectMain__text {
-    width: 25ch;
+    font-size: 90%;
     margin-bottom: 1rem;
   }
   .footer {
