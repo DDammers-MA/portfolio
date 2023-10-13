@@ -155,6 +155,17 @@ body {
   height: 100vh;
 }
 
+.reveal {
+  opacity: 0;
+  transform: translateY(150px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .Projecten {
   height: 30vh;
   margin-bottom: 10rem; /* Add margin to create space between Projecten and the footer */
@@ -212,7 +223,7 @@ body {
 }
 
 .aboutMe {
-  height: 100vh;
+  height: 70vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -220,10 +231,6 @@ body {
   color: crimson;
 }
 .aboutMe__left {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
   width: 55%;
 }
 .aboutMe__title {
@@ -236,7 +243,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 4rem;
+  padding-left: 4rem;
 }
 .aboutMe__right {
   width: 40%;
@@ -244,22 +251,6 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-}
-.aboutMe__list {
-  list-style: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 2rem;
-}
-.aboutMe__items {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 10rem;
-  aspect-ratio: 1/1;
-  background: black;
 }
 
 .footer {
@@ -306,12 +297,12 @@ body {
   flex-shrink: 1;
 }
 .ProjectMain__title {
-  font-size: 5rem;
+  font-size: 150%;
   width: 200%;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding-top: 2rem;
   color: crimson;
 }
 .ProjectMain__details {
@@ -345,6 +336,20 @@ body {
   width: 50ch;
   margin-bottom: 2rem;
 }
+.ProjectMain__skills {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.ProjectMain__skill i {
+  height: 8rem;
+  font-size: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .ProjectMain__Buttons {
   display: flex;
   align-items: center;
@@ -362,6 +367,7 @@ body {
 }
 .ProjectMain__Button:hover {
   transition: 0.2s all;
+  cursor: pointer;
   background: crimson;
   color: white;
   border: none;
@@ -373,7 +379,7 @@ body {
 
 .skills {
   height: 100vh;
-  margin-top: 10rem;
+  margin-top: 15rem;
 }
 .skills__title {
   display: flex;
@@ -595,6 +601,9 @@ body {
   .aboutMe__left {
     width: 100%;
   }
+  .Projecten__title {
+    margin-top: 5rem;
+  }
   .skills__list {
     gap: 5rem;
   }
@@ -608,10 +617,13 @@ body {
     padding-right: 0;
   }
   .hamburger {
+    padding: 1rem;
     display: block;
     position: absolute;
     right: 0;
     top: 0;
+    align-items: center;
+    justify-content: center;
   }
   .header__ul {
     /* Set initial left position to -100% */

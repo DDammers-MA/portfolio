@@ -1,20 +1,13 @@
 .aboutMe {
-    height: 100vh;
+  
+    height: 70vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    color: crimson;
- 
-  
-   
-
+     color: crimson;
 
     &__left{
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     flex-direction: column;
      width: 55%;
     }
 
@@ -24,13 +17,15 @@
         align-items: center;
         justify-content: center;
         width: 100%;
+    
+     
     }
 
     &__text {
         display: flex;
         align-items: center;
         justify-content: center;
-      padding: 4rem;
+      padding-left: 4rem;
         
     }
 
@@ -41,27 +36,5 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
-    }
-
-    &__list{
-        
-list-style: none;
-
-display: flex;
-align-items: center;
-justify-content: center;
-flex-wrap: wrap;
-
-gap: 2rem;
-
-    }
-
-    &__items{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    height: 10rem;
-    aspect-ratio: 1/1;
-background: black;
     }
 }

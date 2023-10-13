@@ -29,7 +29,7 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <li class="header__li header__li--home"><a class="header__link" href="./index.php">Home</a></li>
                 <li class="header__li"><a class="header__link" href="./projecten.php">Projecten</a></li>
                 <li class="header__li"><a class="header__link" href="./index.php#AboutMe">About me</a></li>
-                <li class="header__li header__li"><a class="header__link header__link--contact" href="./index.php#contact">contact</a></li>
+                <li class="header__li header__li"><a class="header__link header__link--contact" href="./index.php#contact">Contact</a></li>
            
             </ul>
             
@@ -48,7 +48,7 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
             <ul class="Projecten__ul ">
     <?php foreach ($projects as $project): ?>
-        <li class="Projecten__li">
+        <li class="Projecten__li  reveal">
             <a class="Projecten__Link" href="project.php?id=<?php echo $project['id']; ?>"> <!-- Add a link to the project detail page -->
                 <img class="Projecten__img" src="<?php echo $project['img']; ?>" alt="hallo">
                 <?php echo $project['naam']; ?>
@@ -71,7 +71,7 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <li class="footer__listItem"><a class="footer__link" href="./index.php">Home</a></li>
         <li class="footer__listItem"><a class="footer__link" href="./projecten.php">Projecten</a></li>
         <li class="footer__listItem"><a class="footer__link" href="#AboutMe">About me</a></li>
-        <li class="footer__listItem"><a class="footer__link header__link--contact" href="">contact</a></li>
+        <li class="footer__listItem"><a class="footer__link header__link--contact" href="">Contact</a></li>
     </ul>
 </div>
 

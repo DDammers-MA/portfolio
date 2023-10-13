@@ -34,7 +34,7 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <li class="header__li header__li--home"><a class="header__link" href="./index.php">Home</a></li>
                 <li class="header__li"><a class="header__link" href="./projecten.php">Projecten</a></li>
                 <li class="header__li"><a class="header__link" href="#AboutMe">About me</a></li>
-                <li class="header__li header__li"><a class="header__link header__link--contact" href="./index.php#contact">contact</a></li>
+                <li class="header__li header__li"><a class="header__link header__link--contact" href="./index.php#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
                 <span class="bar"></span>
@@ -67,12 +67,12 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
         </article>
 
 
-        <article class="Projecten Projecten--main  animate__animated animate__fadeInUp">
+        <article class="Projecten Projecten--main  animate__animated animate__fadeInUp ">
             <h3 class="Projecten__title">uitgelichte projecten</h3>
 
-            <ul class="Projecten__ul">
+            <ul class="Projecten__ul  ">
                 <?php foreach ($projects as $project) : ?>
-                    <li class="Projecten__li">
+                    <li class="Projecten__li reveal">
                         <a class="Projecten__Link" href="project.php?id=<?php echo $project['id']; ?>"> 
                             <img class="Projecten__img" src="<?php echo $project['img']; ?>" alt="hallo">
                             <?php echo $project['naam']; ?>
@@ -82,9 +82,10 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
             </ul>
         </article>
 
-        <article id="AboutMe" class="aboutMe animate__animated animate__fadeInUp">
-            <h2 class="aboutMe__title"> about me</h1>
-                <section class="aboutMe__left">
+        <article id="AboutMe" class="aboutMe animate__animated animate__fadeInUp reveal ">
+       
+            <h2 class="aboutMe__title "> about me</h1>
+                <section class="aboutMe__left reveal">
 
                     <p class="aboutMe__text">
                         Hallo mijn naam is Daniel Dammers en ik ben een student op het mediacollege Amsterdam voor de afgelopen 2.5 jaar. Ik heb voor de opleiding software-devloper gekozen en specialiseer vooral in Front-end,<br>
@@ -94,15 +95,16 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     </p>
                   
                 </section>
-                <section class="aboutMe__right">
+                <section class="aboutMe__right reveal">
                     <img class="main__img main__img--2" src="img/foto Daniel (2).webp" alt="">
                 </section>
+               
         </article>
 
         <article class="skills animate__animated animate__fadeInUp">
             <h2 class="skills__title">skills</h2>
 
-            <ul class="skills__list">
+            <ul class="skills__list reveal">
 
                 <li class="skills__listItem">
                     <i class="fa-brands fa-html5" style="color: #ff0000;"></i>
@@ -145,14 +147,14 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
         <div class="footer__div">
-            <h3 class="footer__title">navigatie</h3>
+            <h3 class="footer__title ">navigatie</h3>
 
             <ul class="footer__list">
 
                 <li class="footer__listItem"><a class="footer__link" href="./index.php">Home</a></li>
                 <li class="footer__listItem"><a class="footer__link" href="./projecten.php">Projecten</a></li>
                 <li class="footer__listItem"><a class="footer__link" href="#AboutMe">About me</a></li>
-                <li class="footer__listItem"><a class="footer__link header__link--contact" href="">contact</a></li>
+                <li class="footer__listItem"><a class="footer__link header__link--contact" href="#contact">contact</a></li>
             </ul>
         </div>
 
@@ -162,8 +164,8 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
             <ul class="footer__list">
 
-                <li class="footer__listItem"><a class="footer__link" href="https://www.linkedin.com/in/dani%C3%ABl-d-17093a23b/">linkedin</a></li>
-                <li class="footer__listItem"><a class="footer__link" href="https://github.com/DDammers-MA">github</a></li>
+                <li class="footer__listItem"><a  target="_blank" class="footer__link" href="https://www.linkedin.com/in/dani%C3%ABl-d-17093a23b/">linkedin</a></li>
+                <li class="footer__listItem"><a  target="_blank" class="footer__link" href="https://github.com/DDammers-MA">github</a></li>
 
             </ul>
         </div>
@@ -172,10 +174,8 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
             <h3 id="contact" class="footer__title">contact</h3>
 
             <ul class="footer__list">
-
                 <li class="footer__listItem"> <a href="tel:0610039069">0610039060</a></li>
                 <li class="footer__listItem"> <a href="mailto:Dammersdaniel@gmail.com">Dammersdaniel@gmail.com</a> </li>
-                <li class="footer__listItem"> <a href="mailto:daniel@dammienet.nl">daniel@dammienet.nl</a></li>
             </ul>
         </div>
     </footer>

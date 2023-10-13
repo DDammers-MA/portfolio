@@ -13,12 +13,12 @@ flex-shrink: 1;
 }
 
 &__title{
-font-size: 5rem;
+font-size: 150%;
 width: 200%;
 display: flex;
 align-items: center;
 justify-content: center;
-padding: 2rem;
+padding-top: 2rem;
 color: crimson;
 }
 
@@ -68,6 +68,24 @@ flex-direction: column;
       
     }
 
+&__skills{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    gap: 2rem;
+}
+
+&__skill i {
+    height: 8rem;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ 
+}
+
     &__Buttons {
         display: flex;
 
@@ -90,6 +108,7 @@ flex-direction: column;
 
         &:hover{
             transition: 0.2s all;
+            cursor: pointer;
             background: crimson;
             color: white;
             border: none;
@@ -102,6 +121,7 @@ flex-direction: column;
             text-decoration: none;
             color: black;
 
+      
             
         }
 }
