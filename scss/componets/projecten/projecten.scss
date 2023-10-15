@@ -1,4 +1,6 @@
 @use "../../abstracts/animations";
+@use "../../abstracts/animations";
+@use "../../abstracts/colors";
 
 
 .Projecten {
@@ -13,10 +15,8 @@
     padding: 2rem;
     padding-top:4rem ;
     font-size: 150%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: crimson;
+    @include mixins.flex;
+    color: map-get(colors.$baseColors, "crimson");
 
 
   }
@@ -25,9 +25,7 @@
     animation: fadeInAnimation 1s ease-in-out forwards;
     gap: 3rem;
     flex-wrap: wrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include mixins.flex;
     list-style: none;
     padding: 2rem;
    
@@ -39,9 +37,7 @@
   }
 
   &__li {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include mixins.flex;
     flex-direction: column;
     
     height: 20rem;
@@ -62,12 +58,10 @@ transition: all 0.2s;
 
   &__Link{
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include mixins.flex;
     text-decoration: none;
     flex-direction: column;
-    color: black;
+    color:  map-get(colors.$baseColors, "black");
    
 
   }

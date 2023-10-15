@@ -23,7 +23,6 @@ document.querySelectorAll(".header__link").forEach(n => n.addEventListener("clic
     document.body.style.overflow = "auto"; 
 }));
 
-
 function reveal() {
     var reveals = document.querySelectorAll(".reveal");
   
@@ -44,9 +43,10 @@ function reveal() {
 
   window.addEventListener("load", () => {
     setTimeout(() => {
-        window.scrollBy(0, 1);
-    }, 500); 
+        window.scrollTo(0, document.getElementById("projecten").offsetTop);
+    }, 500);
 });
+
 
 
 

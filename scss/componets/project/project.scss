@@ -1,3 +1,6 @@
+@use "../../abstracts/mixins";
+@use "../../abstracts/colors";
+
 .ProjectMain{
 min-height: 90vh;
 display: grid;
@@ -15,18 +18,14 @@ flex-shrink: 1;
 &__title{
 font-size: 150%;
 width: 200%;
-display: flex;
-align-items: center;
-justify-content: center;
+@include mixins.flex;
 padding-top: 2rem;
-color: crimson;
+color: map-get(colors.$baseColors, "crimson");
 }
 
     &__details{
     height: 70%;
-   display: flex;
-   align-items: center;
-   justify-content: center;
+    @include mixins.flex;
      
 
         
@@ -35,10 +34,7 @@ color: crimson;
     &__img{
         
        height: 25rem;
-
-       display: flex;
-       align-items: center;
-       justify-content: center;
+       @include mixins.flex;
        object-fit: contain;
        border-radius: 1rem;
        box-shadow: 0 2rem 3rem 0 rgba(0, 0, 0,0.8);
@@ -48,16 +44,14 @@ color: crimson;
     &__artcRight{
 
 height: 50%;
-display: flex;
-align-items: flex-start;
-justify-content: center;
+@include mixins.flex;
 flex-direction: column;
     }
 
     &__omschrijving{
       
         margin-bottom: 1rem;
-        color: crimson;
+        color: map-get(colors.$baseColors, "crimson");
     }
 
     &__text{
@@ -80,17 +74,12 @@ flex-direction: column;
 &__skill i {
     height: 8rem;
     font-size: 5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include mixins.flex;
  
 }
 
     &__Buttons {
-        display: flex;
-
-        align-items: center; 
-        justify-content: center;
+        @include mixins.flex;
         gap: 4rem;
         margin-top: auto; 
         
@@ -100,8 +89,8 @@ flex-direction: column;
     &__Button{
         height: 4rem;
         width: 8rem;
-        background: white;
-        color:black ;
+        background:  map-get(colors.$baseColors, "white");
+        color: map-get(colors.$baseColors, "black") ;
         border: 0.2rem solid black;
         border-radius: 0.5rem;
 
@@ -109,8 +98,8 @@ flex-direction: column;
         &:hover{
             transition: 0.2s all;
             cursor: pointer;
-            background: crimson;
-            color: white;
+            color: map-get(colors.$baseColors, "crimson");
+            color:  map-get(colors.$baseColors, "white");
             border: none;
            
         }
@@ -119,7 +108,7 @@ flex-direction: column;
     
         &__Button > a{
             text-decoration: none;
-            color: black;
+            color: map-get(colors.$baseColors, "black");
 
       
             

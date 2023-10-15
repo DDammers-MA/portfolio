@@ -25,7 +25,7 @@ $project = $stmt->fetch(PDO::FETCH_ASSOC);
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
     <script src="./src/main.js" defer></script>
-    <title><?php echo $project['naam']; ?> Project Detail</title> <!-- Use the project name in the title -->
+    <title>project</title> <!-- Use the project name in the title -->
 </head>
 
 <body>

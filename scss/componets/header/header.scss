@@ -1,19 +1,17 @@
-
+@use "../../abstracts/mixins.scss";
+@use "../../abstracts/colors";
 .header {
  
 position: relative; 
-    z-index: 1;
-  
-    transition: background-color 0.5s ease; 
+z-index: 1;
+transition: background-color 0.5s ease; 
 
 
     &__nav {
         height: 100%;
         width: 100%;
   
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include mixins.flex;
 
 
     }
@@ -21,9 +19,7 @@ position: relative;
     &__ul {
         padding: 2rem;
         width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include mixins.flex;
 
         list-style: none;
         gap: 10rem;
@@ -33,18 +29,14 @@ position: relative;
     }
 
     &__li {
-     
         font-size: 120%;
-   
     }
-
-  
     &__link {
 
         text-decoration: none;
-    color: black;
+    color: map-get(colors.$baseColors, "black");
         &:hover{
-            color: crimson;
+            color: map-get(colors.$baseColors, "crimson");
         }
     }
 
@@ -61,13 +53,13 @@ position: relative;
 .bar{
     width: 5rem; /* Adjust the width as needed */
     height: 0.8rem;
-    background-color: black;
+    background-color:  map-get(colors.$baseColors, "black");
     display: block;
     margin: 0.5rem auto;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 
-    background-color: black;
+    background-color:  map-get(colors.$baseColors, "black");
 
 }

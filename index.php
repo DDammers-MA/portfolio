@@ -23,7 +23,7 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
   />
     <link rel="stylesheet" href="css/style.css">
     <script src="./src/main.js" defer></script>
-    <title>Document</title>
+    <title>Daniël Dammers</title>
 </head>
 
 <body>
@@ -88,11 +88,7 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <section class="aboutMe__left reveal">
 
                     <p class="aboutMe__text">
-                        Hallo mijn naam is Daniel Dammers en ik ben een student op het mediacollege Amsterdam voor de afgelopen 2.5 jaar. Ik heb voor de opleiding software-devloper gekozen en specialiseer vooral in Front-end,<br>
-                        omdat ik het leuker vind om website's in nieuwe en andere manier te style/maken en elke keer en andere manier vinden om iets te leuks te maken. <br>
-                        wat ik nog meer weer leren?<br>
-                        wat ik graag ik nog wat meer wil leren is back-end ik heb gezien wat je er allemaal me kan doen ik denk dat als ik mijn front-end en back-end zou kunnen combineren dat ik hele gave website kan maken
-                    </p>
+                    Hallo, mijn naam is Daniel Dammers, en ik ben een student aan het Mediacollege Amsterdam voor de afgelopen 2,5 jaar. Ik heb gekozen voor de opleiding softwareontwikkelaar en specialiseer me vooral in front-end, omdat ik het leuker vind om websites op nieuwe en andere manieren te stylen/maken en elke keer een andere manier te vinden om iets leuks te maken. <br>  Wat zou ik nog meer willen leren? <br> Wat ik graag nog meer wil leren is back-end. Ik heb gezien wat je er allemaal mee kunt doen, en ik denk dat als ik mijn front-end en back-end zou kunnen combineren, ik hele gave websites kan maken.</p>
                   
                 </section>
                 <section class="aboutMe__right reveal">

@@ -1,12 +1,13 @@
+@use "../../abstracts/mixins.scss";
+@use "../../abstracts/colors";
+
 .footer {
   height: 20rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include mixins.flex;
   gap: 10rem;
   font-size: 1.6rem;
 
-  background: black;
+  background:  map-get(colors.$baseColors, "black");
 
 
   &__div {
@@ -31,11 +32,11 @@ justify-content: flex-start;
   }
 
   &__title{
-    color: crimson;
+    color: map-get(colors.$baseColors, "crimson");
   }
 
   &__listItem > a{
-   color: white;
+   color:  map-get(colors.$baseColors, "white");
     text-decoration: none;
   }
 

@@ -1,22 +1,22 @@
+@use "../../abstracts/mixins";
+@use "../../abstracts/colors";
+
 .skills{
     height: 100vh;
     margin-top: 15rem;
     
 
     &__title{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: crimson;
+        @include mixins.flex;
+        color: map-get(colors.$baseColors, "crimson");
        
         
     }
 
     &__list{
-        display: flex;
+        @include mixins.flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+     
         gap: 1rem;
         padding: 2rem;
     }
@@ -24,9 +24,7 @@
     &__listItem{
         width: 25%; 
         margin-top: 5rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include mixins.flex;
         flex-direction: column;
         font-size: 3rem;
    

@@ -1,4 +1,6 @@
 @use "../../abstracts/animations";
+@use "../../abstracts/mixins";
+@use "../../abstracts/colors";
 .main {
     height: 100%;
     overflow: hidden;
@@ -7,9 +9,7 @@
 
     &__article {
     height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center; 
+    @include mixins.flex;
  
   
  }
@@ -20,16 +20,14 @@
         border-radius: 1rem;
         box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.8);
         object-fit: contain;
-        border: 0.2rem solid rgb(0, 0, 0); 
+        border: 0.2rem solid  map-get(colors.$baseColors, "black"); 
         border-radius: 50%;
         flex-wrap: wrap;
 
     }
 
     &__text {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include mixins.flex;
         flex-direction: column;
         margin-left: 5%;
      
@@ -38,9 +36,7 @@
 &__socials {
 
     list-style: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include mixins.flex;
     gap: 2rem;
     text-decoration: none;
 }
@@ -49,17 +45,15 @@
 
 &__social{
     
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include mixins.flex;
     height: 5rem;
     width: 5rem;
     text-decoration: none;
-    color: black;
+    color: map-get(colors.$baseColors, "black");
    
     
     &:hover{
-        color: crimson;
+        color: map-get(colors.$baseColors, "crimson");
     }
 }
 

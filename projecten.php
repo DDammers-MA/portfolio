@@ -19,7 +19,7 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
     <script src="./src/main.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 
-    <title>Document</title>
+    <title>projecten</title>
 </head>
 
 <body>
@@ -43,7 +43,8 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </header>
 
     <main class="main">
-        <article class="Projecten animate__animated animate__fadeInUp">
+    <article class="Projecten animate__animated animate__fadeInUp" id="projecten">
+
             <h3 class="Projecten__title">Projecten</h3>
 
             <ul class="Projecten__ul ">
