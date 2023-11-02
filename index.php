@@ -4,7 +4,7 @@ require 'config.php';
 require 'function.php';
 $connection = dbConnect();
 
-$sql = "SELECT id, naam, img FROM projecten LIMIT 6"; // Use the correct table name 'projecten'
+$sql = "SELECT id, naam, img FROM projecten LIMIT 6";
 $stmt = $connection->prepare($sql);
 $stmt->execute();
 $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -28,6 +28,8 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 <body>
 
+<div class="background">
+
 <header class="header">
         <nav class="header__nav">
             <ul class="header__ul">
@@ -46,12 +48,15 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </header>
 
     <main class="main ">
-        <article class="main__article animate__animated animate__fadeInUp">
 
-            <img class="main__img" src="img/foto Daniel9.webp" alt="">
+        <article class="main__article">
+
+        
+
+            <img class="main__img animate__animated animate__fadeInUp" src="img/foto Daniel9.webp" alt="">
 
 
-            <div class="main__text">
+            <div class="main__text animate__animated animate__fadeInUp">
                 <p>Hello! i'm Daniël Dammers</p>
                 <ul class="container">
                   
@@ -62,27 +67,39 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     <li class="main__social"><a class="main__social" target="_blank" href="https://github.com/DDammers-MA"><i class="fa-brands fa-github fa-2xl"></i></a></li>
                     <li class="main__social"><a  class="main__social" target="_blank" href="https://www.linkedin.com/in/dani%C3%ABl-d-17093a23b/"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
                 </ul>
-
             </div>
+          
         </article>
 
+        
+        </div>
 
-        <article class="Projecten Projecten--main  animate__animated animate__fadeInUp ">
+       <article class="Projecten Projecten--main">
+       <div class="Projecten__div">
+  
+    
             <h3 class="Projecten__title">uitgelichte projecten</h3>
 
             <ul class="Projecten__ul  ">
                 <?php foreach ($projects as $project) : ?>
                     <li class="Projecten__li reveal">
-                        <a class="Projecten__Link" href="project.php?id=<?php echo $project['id']; ?>"> 
+                        <a class="Projecten__Link" href="project.php?id=<?php echo $project['id']; ?>">
+
+                        <div class="Projecten__container">
+                       
                             <img class="Projecten__img" src="<?php echo $project['img']; ?>" alt="hallo">
-                            <?php echo $project['naam']; ?>
+                            <p class="Projecten__name"><?php echo $project['naam']; ?></p>
+                            <div>
                         </a>
                     </li>
                 <?php endforeach; ?>
             </ul>
-        </article>
 
-        <article id="AboutMe" class="aboutMe animate__animated animate__fadeInUp reveal ">
+            </div>
+    </article >
+
+
+        <article id="AboutMe" class="aboutMe reveal ">
        
             <h2 class="aboutMe__title "> about me</h1>
                 <section class="aboutMe__left reveal">
@@ -94,10 +111,11 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 <section class="aboutMe__right reveal">
                     <img class="main__img main__img--2" src="img/foto Daniel (2).webp" alt="">
                 </section>
-               
-        </article>
+              
+       </article>
+    <article class="skills">
 
-        <article class="skills animate__animated animate__fadeInUp">
+    <div class="skills__div">
             <h2 class="skills__title">skills</h2>
 
             <ul class="skills__list reveal">
@@ -136,42 +154,43 @@ $projects = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
 
             </ul>
+            </div>
         </article>
     </main>
 
-    <footer class="footer animate__animated animate__fadeInUp">
+    <footer class="footer">
 
 
         <div class="footer__div">
-            <h3 class="footer__title ">navigatie</h3>
+            <h3 class="footer__title ">Navigatie</h3>
 
             <ul class="footer__list">
 
                 <li class="footer__listItem"><a class="footer__link" href="./index.php">Home</a></li>
                 <li class="footer__listItem"><a class="footer__link" href="./projecten.php">Projecten</a></li>
                 <li class="footer__listItem"><a class="footer__link" href="#AboutMe">About me</a></li>
-                <li class="footer__listItem"><a class="footer__link header__link--contact" href="#contact">contact</a></li>
+                <li class="footer__listItem"><a class="footer__link header__link--contact" href="#contact">Contact</a></li>
             </ul>
         </div>
 
 
         <div class="footer__div">
-            <h3 class="footer__title">find me</h3>
+            <h3 class="footer__title">Find me</h3>
 
             <ul class="footer__list">
 
-                <li class="footer__listItem"><a  target="_blank" class="footer__link" href="https://www.linkedin.com/in/dani%C3%ABl-d-17093a23b/">linkedin</a></li>
-                <li class="footer__listItem"><a  target="_blank" class="footer__link" href="https://github.com/DDammers-MA">github</a></li>
+                <li class="footer__listItem"><a class="footer__link"  target="_blank" href="https://www.linkedin.com/in/dani%C3%ABl-d-17093a23b/"><i class="fa-brands fa-linkedin"></i>Linkedin</a></li>
+                <li class="footer__listItem"><a class="footer__link "  target="_blank" href="https://github.com/DDammers-MA"><i class="fa-brands fa-github"></i>Github</a></li>
 
             </ul>
         </div>
 
         <div class="footer__div">
-            <h3 id="contact" class="footer__title">contact</h3>
+            <h3 id="contact" class="footer__title">Contact</h3>
 
             <ul class="footer__list">
-                <li class="footer__listItem"> <a href="tel:0610039069">0610039060</a></li>
-                <li class="footer__listItem"> <a href="mailto:Dammersdaniel@gmail.com">Dammersdaniel@gmail.com</a> </li>
+                <li class="footer__listItem"><a class="footer__link " href="tel:0610039069"> <i class="fa-solid fa-phone"></i>+31 6 10039060</a></li>
+                <li class="footer__listItem"><a class="footer__link " href="mailto:Dammersdaniel@gmail.com"><i class="fa-solid fa-at"></i>Dammersdaniel@gmail.com</a> </li>
             </ul>
         </div>
     </footer>

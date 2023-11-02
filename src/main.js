@@ -38,14 +38,9 @@ function reveal() {
       }
     }
   }
-  
   window.addEventListener("scroll", reveal);
 
-  window.addEventListener("load", () => {
-    setTimeout(() => {
-        window.scrollTo(0, document.getElementById("projecten").offsetTop);
-    }, 500);
-});
+
 
 
 

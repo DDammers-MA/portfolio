@@ -1,23 +1,40 @@
 @use "../../abstracts/animations";
-@use "../../abstracts/animations";
 @use "../../abstracts/colors";
-
+@use "../../abstracts/mixins";
 
 .Projecten {
-  height: 30vh;
-  margin-bottom: 10rem; /* Add margin to create space between Projecten and the footer */
-  height: auto; 
+  height: 100%;
+  padding: 2rem;
   flex-direction: column;
+
+  @include mixins.flex;
+
   
 
+  &--main{
+    height: 100%; 
+    width: 100%;
+
+    margin-bottom: 5rem; 
+  }
+
+  &__container{
+    position: relative;
+
+  }
+  &__div{
+    width: 95%;
+    background: linear-gradient(#008170,#005B41 );
+    height: 100%;
+    border-top-left-radius: 10rem;
+    border-bottom-right-radius: 10rem;
+  }
   
   &__title {
-    padding: 2rem;
-    padding-top:4rem ;
+  
+    padding-top: 2rem ;
     font-size: 150%;
     @include mixins.flex;
-    color: map-get(colors.$baseColors, "crimson");
-
 
   }
 
@@ -28,24 +45,20 @@
     @include mixins.flex;
     list-style: none;
     padding: 2rem;
-   
- 
- 
-
-
-   
+    margin-bottom: 5rem; 
+      
   }
 
   &__li {
     @include mixins.flex;
     flex-direction: column;
-    
     height: 20rem;
     width: 30rem;
     object-fit: contain;
-box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0,0.8);
-border-radius: 0.5rem;
-transition: all 0.2s;
+    box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0,0.8);  
+    border-radius: 0.5rem;
+    transition: all 0.2s;
+     background:  map-get(colors.$baseColors, "white");
 
 
 
@@ -61,19 +74,33 @@ transition: all 0.2s;
     @include mixins.flex;
     text-decoration: none;
     flex-direction: column;
-    color:  map-get(colors.$baseColors, "black");
-   
-
+  
   }
 
   &__img {
-   height: 90%;
-width: 100%;
-border-radius: 0.5rem;
+height: 20rem;
+  width: 100%;
 
 
   }
 
+  &__name{
+  
+    position: absolute;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #fff; 
+    padding: 5px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+  }
 
 }
 

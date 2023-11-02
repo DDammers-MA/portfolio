@@ -2,27 +2,27 @@
 @use "../../abstracts/colors";
 
 .aboutMe {
-  
     height: 70vh;
     @include mixins.flex;
     flex-wrap: wrap;
-    color: map-get(colors.$baseColors, "crimson");
+    margin-bottom: 5em;
+ 
 
     &__left{
      width: 55%;
+ 
     }
-
 
     &__title {
         @include mixins.flex;
         width: 100%;
-    
-     
+        color: #005B41;
     }
 
     &__text {
-        @include mixins.flex;
-      padding-left: 4rem;
+    @include mixins.flex;
+    padding-left: 4rem;
+ 
         
     }
 
@@ -31,6 +31,7 @@
         width: 40%;
         @include mixins.flex;
         flex-direction: column;
+   
     
     }
 }

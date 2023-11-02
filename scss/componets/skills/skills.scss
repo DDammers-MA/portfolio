@@ -3,22 +3,34 @@
 
 .skills{
     height: 100vh;
-    margin-top: 15rem;
-    
+width: 100%;
+margin-top: -1rem;
+@include mixins.flex;
 
+
+
+    
+&__div{
+
+    width: 95%;
+    background: linear-gradient(#005B41, #008170);
+   border-top-right-radius: 10rem;
+   border-bottom-left-radius: 10rem;
+    flex-direction: column;
+    padding: 2rem
+}
     &__title{
         @include mixins.flex;
-        color: map-get(colors.$baseColors, "crimson");
-       
-        
+ 
+  
     }
 
     &__list{
         @include mixins.flex;
         flex-wrap: wrap;
-     
         gap: 1rem;
         padding: 2rem;
+        margin-bottom: 5rem; 
     }
 
     &__listItem{
@@ -26,16 +38,18 @@
         margin-top: 5rem;
         @include mixins.flex;
         flex-direction: column;
-        font-size: 3rem;
-   
+        font-size: 3rem;color: map-get(colors.$baseColors, "white"); 
+
+      
+        
     }
 
     
     &__listItem > i{
-        
         font-size: 10rem;
-      
-      
+        color: white;
+     
+        
      }
 }
 

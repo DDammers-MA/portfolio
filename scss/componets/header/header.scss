@@ -1,40 +1,58 @@
-@use "../../abstracts/mixins.scss";
+@use "../../abstracts/mixins";
 @use "../../abstracts/colors";
-.header {
+
+.background{
  
+}
+
+.header {
+  
 position: relative; 
 z-index: 1;
 transition: background-color 0.5s ease; 
+// box-shadow: 0 0 2rem 0.2rem black;
 
+&--project{
+    background: map-get(colors.$baseColors, "white");
+    color: map-get(colors.$baseColors, "black");
+    
+
+
+}
 
     &__nav {
         height: 100%;
         width: 100%;
-  
-        @include mixins.flex;
-
-
+        
     }
 
     &__ul {
         padding: 2rem;
         width: 100%;
-        @include mixins.flex;
-
+       display: flex;
+       align-items: center;
+       justify-content: flex-end;
         list-style: none;
         gap: 10rem;
-
-   
-      
     }
 
     &__li {
         font-size: 120%;
+     
     }
     &__link {
-
         text-decoration: none;
-    color: map-get(colors.$baseColors, "black");
+        color: map-get(colors.$baseColors, "black");
+
+        &:hover{
+            color: map-get(colors.$baseColors, "green");
+        }
+     
+
+        &--pro{
+            color: map-get(colors.$baseColors, "black");
+        }
+
         &:hover{
             color: map-get(colors.$baseColors, "crimson");
         }
@@ -44,22 +62,20 @@ transition: background-color 0.5s ease;
 }
 
 .hamburger{
- display: none;
+    display: none;
     cursor: pointer;
     padding-right: 3rem;
-
 }
 
 .bar{
-    width: 5rem; /* Adjust the width as needed */
+    width: 5rem; 
     height: 0.8rem;
-    background-color:  map-get(colors.$baseColors, "black");
+    background-color: map-get(colors.$baseColors, "crimson");
     display: block;
     margin: 0.5rem auto;
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-
-    background-color:  map-get(colors.$baseColors, "black");
+    background-color:  map-get(colors.$baseColors, "crimson");
 
 }

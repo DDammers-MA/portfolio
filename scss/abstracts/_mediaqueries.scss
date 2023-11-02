@@ -3,12 +3,17 @@
 
 @media screen and (max-width: 62rem) {
 
+ 
+  
+
+      .main{
+        width: 100%
+      }
+
     .ProjectMain{
         @include mixins.flex;
         flex-direction: column;
-       
-        
-            
+
             &__title{
             margin-top: 5rem;
             font-size: 3rem;
@@ -18,63 +23,44 @@
             }
             
                 &__details{
-          
-                 margin-bottom: 5rem;
-            
-                    
+                 margin-bottom: 5rem; 
                 }
             
                 &__artcLeft{
                     margin-bottom: 5rem;
                     @include mixins.flex;
-                        flex-direction: column;
-                    
+                    flex-direction: column;
                     }
 
                 &__artcRight{
                     @include mixins.flex;
                 }
 
-                  
-            
                 &__omschrijving{
-                    margin-bottom: 1rem;
-                    
+                    margin-bottom: 1rem; 
                 }
             
                 &__text{
-                
-                    margin-bottom: 1rem;
-                    width: 80%;
+                margin-bottom: 1rem;
+                width: 80%;
                 }
             
- 
             }
             .footer {
                 height: auto;
                 justify-content: flex-start;
                 align-items: flex-start;
                 padding: 2rem;
-           
-              
-              }
-              
-              
-              
+              }    
+                 
 }
-
-
-
-
 
 @media screen and (max-width: 42.625rem) {
 
     .header {
-
         &__ul {
             gap: 5rem;
         }
-
 
         &__li {
 
@@ -85,20 +71,16 @@
 
     .main {
         overflow: hidden;
-
+        
         &__img {
             transition: transform 0.5s ease;
-            /* Add a smooth transition for scaling */
             transform: scale(0.6);
 
         }
 
         &__article {
             flex-shrink: 1;
-
         }
-
-
 
         &__text {
             color: map-get(colors.$baseColors, "black");
@@ -119,27 +101,20 @@
 }
 .ProjectMain{
 
-
-&__Button{
-               
-    margin-bottom: 2rem;
- 
+    &__Button{
+        margin-bottom: 2rem;
      }
 
     }
 
-
 .skills {
 
     &__list {
-
         gap: 5rem;
-
     }
 
     &__listItem>i {
         font-size: 8rem;
-
     }
 
 
@@ -149,13 +124,11 @@
 
 
     .footer {
-       
-       margin-top: 5rem;
+    
         gap: 1rem;
         flex-direction: column;
        padding-right: 0;
       }
-
 }}
 
 
@@ -166,7 +139,6 @@
         height: 100%;
         overflow: hidden;
    
-
         &__article {
             flex-direction: column;
         }
@@ -239,16 +211,11 @@
                     margin-bottom: 1rem;
                   
 
-                }
-
-
-
-          
-         
+                }  
                 
     }
     .footer {
-        margin-top: 5rem;
+        
          gap: 1rem;
          flex-direction: column;
         padding-right: 0;
@@ -258,16 +225,13 @@
 }
 
 @media screen and (max-width: 26rem) {
-
     .main {
         height: 100%;
         overflow: hidden;
 
         &__article {
             flex-direction: column;
-        
         }
-
 
         &__img {
             
@@ -280,7 +244,9 @@
         }
 
         &__text {
-            color:  map-get(colors.$baseColors, "black");
+
+            margin-top: 2rem;
+            font-size: 140%;
         }
     }
 
@@ -294,48 +260,65 @@
         @include mixins.flex;
         flex-wrap: wrap;
 
-
-
+        &__title{
+            font-size: 140%;
+        }
 
         &__left {
             width: 100%;
+            padding: 1rem;
         }
 
+        
+    &__text {
 
+        padding: 1rem;
+            
+        }
     }
 
     .Projecten {
   
-
         &__title {
      margin-top: 5rem;
-      
+      font-size: 140%;
       
         }
     }
 
-    
-
     .skills {
+        height: auto; 
 
-        &__list {
-
-            gap: 5rem;
-
+        &__title{
+            font-size: 140%;
         }
+        &__list {
+            gap: 5rem;
+        }
+
+        &__listItem{
+            width: 20%; 
+            
+            @include mixins.flex;
+            flex-direction: column;
+            font-size: 2.5rem;
+            color: white;
+         
+        }
+    
 
         &__listItem>i {
             font-size: 8rem;
+            
 
         }
     }
 
     .footer {
-    
-       margin-top: 5rem;
+
         gap: 1rem;
         flex-direction: column;
-       padding-right: 0;
+        padding-top: 4rem;
       }
 
 
@@ -352,7 +335,6 @@
 
 
     .header__ul {
-        /* Set initial left position to -100% */
         left: -100%;
         position: fixed;
         top: 7rem;
@@ -364,8 +346,6 @@
         text-align: center;
         transition: 0.3s;
         z-index: 0;
-       
-       
     }
 
     .header__li {
@@ -375,8 +355,6 @@
     .header__ul.active {
         left: 0;
     }
-
-    
 
 }
 

@@ -1,14 +1,15 @@
+@use "../abstracts/colors";
 
 .container .text{
     position: relative;
-    color: crimson;
+    color: map-get(colors.$baseColors, "crimson");
     font-size: 3rem;
     font-weight: 600;
    
 }
 
 .container .text.first__text{
-    color: white;
+    color:map-get(colors.$baseColors, "white");
 }
 
 .text.second__text::before{
@@ -18,11 +19,9 @@
     left: 0;
     height: 100%;
     width: 100%;
-    background: white;
+    background:  #006D57;
     border-left: 0.2rem solid black;
     animation: animate 4s steps(12) infinite;
-
-  
 }
 
 @keyframes animate{

@@ -1,44 +1,64 @@
-@use "../../abstracts/mixins.scss";
+@use "../../abstracts/mixins";
 @use "../../abstracts/colors";
 
 .footer {
+
   height: 20rem;
   @include mixins.flex;
   gap: 10rem;
   font-size: 1.6rem;
+  background: linear-gradient(#008170,#005B41);
 
-  background:  map-get(colors.$baseColors, "black");
+  
+  &--projecten{
+    background:  map-get(colors.$baseColors, "white");
+    color:  map-get(colors.$baseColors, "green");
+  
+  }
+
+
 
 
   &__div {
     height: 50%;
     display: flex;
-align-items: flex-start;
-justify-content: flex-start;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: column;
  
   }
   &__list {
    font-size: 120%;
   list-style: none;
-
- 
   }
-  
-  &__link{
-  
-    text-decoration: none;
 
-  }
 
   &__title{
-    color: map-get(colors.$baseColors, "crimson");
-  }
 
-  &__listItem > a{
-   color:  map-get(colors.$baseColors, "white");
+  }
+    
+  &__link{
     text-decoration: none;
+    color: map-get(colors.$baseColors, "white");
+    
+    &:hover{
+  text-decoration: underline;
+    }
+    
+
+    &--pro{
+      
+      color: map-get(colors.$baseColors, "black");
+   
+   
+    }
+
+  
   }
 
+  &__listItem i{
+  margin-right: 1rem;
+
+   }
 }
 

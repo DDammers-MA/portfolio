@@ -8,6 +8,7 @@ grid-template-columns: 50% 50%;
 align-items: center;
 justify-content: center;
 
+
 &__artcLeft{
 height: 100%;
 flex-wrap: wrap ;
@@ -20,7 +21,7 @@ font-size: 150%;
 width: 200%;
 @include mixins.flex;
 padding-top: 2rem;
-color: map-get(colors.$baseColors, "crimson");
+
 }
 
     &__details{
@@ -44,22 +45,20 @@ color: map-get(colors.$baseColors, "crimson");
     &__artcRight{
 
 height: 50%;
-@include mixins.flex;
+display: flex;
+align-items: flex-start;
+justify-content: center;
 flex-direction: column;
     }
 
     &__omschrijving{
-      
         margin-bottom: 1rem;
-        color: map-get(colors.$baseColors, "crimson");
+        
     }
 
     &__text{
-        
         width: 50ch;
         margin-bottom: 2rem;
-       
-      
     }
 
 &__skills{
@@ -67,7 +66,6 @@ flex-direction: column;
     display: flex;
     align-items: center;
     justify-content: center;
-  
     gap: 2rem;
 }
 
@@ -82,8 +80,6 @@ flex-direction: column;
         @include mixins.flex;
         gap: 4rem;
         margin-top: auto; 
-        
-    
     }
     
     &__Button{
@@ -93,12 +89,10 @@ flex-direction: column;
         color: map-get(colors.$baseColors, "black") ;
         border: 0.2rem solid black;
         border-radius: 0.5rem;
-
-
         &:hover{
             transition: 0.2s all;
             cursor: pointer;
-            color: map-get(colors.$baseColors, "crimson");
+           
             color:  map-get(colors.$baseColors, "white");
             border: none;
            
